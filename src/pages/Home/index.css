@@ -105,54 +105,10 @@
   transform: translateX(30px);
 }
 
-/* navigation */
-a {
-  font-size: 18px;
-  cursor: pointer;
-  position: relative;
-  border: none;
-  background: none;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: color;
-}
-
-a:focus,
-a:hover {
-  color: #9956f6;
-}
-
-a:focus:after,
-a:hover:after {
-  width: 100%;
-  left: 0%;
-}
-
-a:after {
-  content: "";
-  pointer-events: none;
-  bottom: -2px;
-  left: 50%;
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background-color: #9956f6;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: width, left;
-}
-
-/* background */
-.app-container {
-  background: #f3f3ff;
-  min-height: 940px;
-  width: 100%;
-  height: 100vh;
-}
-
-.circle {
-  width: 450px;
-  height: 450px;
-  background: linear-gradient(to tobottom, #fa39ad 40%, #fe6c4c 50%);
-  filter: blur(120pxs);
+/* front text */
+.front {
+  background: #cf0c13;
+  background: repeating-linear-gradient(90deg, #cf0c13 0, #ff0a95 50%, #ff5724);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

@@ -5,12 +5,21 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import "./Home.css";
+import back from "../../assets/teste2.svg";
+import "./index.css";
 
-export function Home() {
+// cor de fundo: bg-[#f3f3ff]
+// sombra: drop-shadow-lg
+
+export function Header() {
   return (
-    <div>
-      <header className="flex h-24 items-center justify-center bg-white drop-shadow-lg">
+    <div
+      className="bg-cover"
+      style={{
+        backgroundImage: `url(${back})`,
+      }}
+    >
+      <header className="flex h-20 items-center justify-center shadow-[0px_-5px_41px_2px_#C8C9C5]">
         <nav className="mx-auto flex w-[92%] items-center justify-between">
           <div>
             <img
@@ -22,7 +31,7 @@ export function Home() {
           <div className="">
             <ul className="flex items-center gap-[4vh]">
               <li>
-                <a className="text-xl hover:text-violet-700" href="">
+                <a className="line text-xl hover:text-violet-700" href="">
                   Início
                 </a>
               </li>
@@ -86,10 +95,6 @@ export function Home() {
           </div>
         </nav>
       </header>
-
-      <div className="app-container flex items-end justify-center pb-10">
-        <div className="circle rounded-full"></div>
-      </div>
     </div>
   );
 }
