@@ -2,8 +2,8 @@ import "./index.css";
 
 export function Home() {
   return (
-    <div>
-      <div className="flex flex-col items-center justify-center pt-16">
+    <section>
+      <div className="container flex flex-col items-center justify-center pt-16">
         <div className="">
           <p className="text-left text-2xl text-[#1E293B]">
             &lt;Hello World! /&gt;
@@ -64,6 +64,6 @@ export function Home() {
           </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

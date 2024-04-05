@@ -1,5 +1,3 @@
-import { Separator } from "@/components/ui/separator";
-
 export function Footer() {
   return (
     <footer className="absolute bottom-0 h-64 w-full bg-gray-800 py-4 text-center text-gray-300">
